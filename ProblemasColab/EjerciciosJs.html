@@ -1,0 +1,260 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Ejercicios Colaboracion</title>
+</head>
+<body>
+    <!-- contenedor problema -->
+    <div class="contenedor-problemas">
+        <!-- Ejercicio 1 -->
+        <div class="contenedor-problema">
+            <h2>Ejercicio 1</h2>
+            <!-- Descripcion -->
+            <h4>Leer 2 numeros; si son iguales que los multiplique si 
+                el primero es mayor que el segundo que los reste y si 
+                no que los sume</h4>
+            <div class="contenedor-contenido">
+                <form method="post" name="formulario1" action="">
+                    <table class="tabla-problema">
+                        <tbody>
+                            <!-- Inputs -->
+                            <tr> 
+                                <td><label>Introduzca un numero: </label></td>
+                                <td><input type="number" id="num1" 
+                                    nombre="num1" class="input_text"> </td>
+                            </tr>
+                            <tr>
+                                <td><label>Introduzca un numero: </label></td>
+                                <td><input type="number" id="num2" 
+                                    nombre="num2" class="input_text"> </td> 
+                            </tr>
+                            <!-- Input muestra el resultado -->
+                            <tr>
+                                <td><label>Resultado: </label></td>
+                                <td><input type="text" name="resultado"
+                                    id="resultado" readonly="readonly" 
+                                    class="input_text" ></td>
+                            </tr>
+                            <!-- Botones metodos para js "Problema1()" y "borrard_p1()" -->
+                            <tr>
+                                <td></td>
+                                <td> <input type="button" value="Resultado"
+                                    onclick="Problema1()" name="mostrarResultados"
+                                    class="input_button"> </td>
+                            </tr>
+                            <tr>
+                                <td></td>
+                                <td><input type="button" value="Borrar Datos" 
+                                    name="borrar" onclick="borrard_p1()" 
+                                    class="input_button"></td>
+                            </tr>
+                        </tbody>
+                    </table>
+                </form>
+            </div>
+        </div>
+        <!-- Ejercicio 2 -->
+        <div class="contenedor-problema">
+            <h2>Ejercicio 2</h2>
+            <!-- Descripcion -->
+            <h4>Leer tres numeros diferentes e imprimir el numero mayor de 
+                los tres.</h4>
+            <div class="contenedor-contenido">
+                <form method="post" name="formulario2" action="">
+                    <table class="tabla-problema">
+                        <tbody>
+                            <!-- Inputs -->
+                            <tr> 
+                                <td><label>Introduzca un numero: </label></td>
+                                <td><input type="number" id="num1" 
+                                    nombre="num1" class="input_text"> </td>
+                            </tr>
+                            <tr>
+                                <td><label>Introduzca un numero: </label></td>
+                                <td><input type="number" id="num2" 
+                                    nombre="num2" class="input_text"> </td> 
+                            </tr>
+                            <tr>
+                                <td><label>Introduzca un numero: </label></td>
+                                <td><input type="number" id="num3" 
+                                    nombre="num3" class="input_text"> </td> 
+                            </tr>
+                            <!-- Input muestra el numero mayor -->
+                            <tr>
+                                <td><label>El numero mayor es: </label></td>
+                                <td><input type="text" name="resultado"
+                                    id="resultado" readonly="readonly" 
+                                    class="input_text" ></td>
+                            </tr>
+                            <!-- Botones metodos para js "Problema2()" y "borrard_p2()" -->
+                            <tr>
+                                <td></td>
+                                <td> <input type="button" value="Encontrar"
+                                    onclick="Problema2()" name="mostrarResultados"
+                                    class="input_button"> </td>
+                            </tr>
+                            <tr>
+                                <td></td>
+                                <td><input type="button" value="Borrar Datos" 
+                                    name="borrar" onclick="borrard_p2()" 
+                                    class="input_button"></td>
+                            </tr>
+                        </tbody>
+                    </table>
+                </form>
+            </div>
+        </div>
+        <!-- Ejercicio 3 -->
+        <div class="contenedor-problema">
+            <h2>Ejercicio 3</h2>
+            <!-- Descripcion -->
+            <h4>Determina la cantidad de dinero que recibira un trabajador por 
+                concepto de las horas extas tabajadas en una empresa, sabiendo
+                que cuando las horas de trabajo exceden de 40, el resto se consideran 
+                horas extras y estas se pagan el doble de una hora normal cuando 
+                no exceden de 8; si las horas extras exceden de 8 se pagan primero 8 
+                al doble de lo que se pagan las horas normales y el resto al triple
+            </h4>
+            <div class="contenedor-contenido">
+                <form method="post" name="formulario3" action="">
+                    <table class="tabla-problema">
+                        <tbody>
+                            <!-- Inputs -->
+                            <tr> 
+                                <td><label>Introduzca el numero de horas que trabaja: </label></td>
+                                <td><input type="number" id="num1" 
+                                    nombre="num1" class="input_text"> </td>
+                            </tr>
+                            <tr> 
+                                <td><label>Introduzca su sueldo por hora: </label></td>
+                                <td><input type="number" id="sueldoH" 
+                                    nombre="sueldoH" class="input_text"> </td>
+                            </tr>
+                            <!-- Input muestra el resultado -->
+                            <tr>
+                                <td><label>Sueldo horas normales: </label></td>
+                                <td><input type="text" name="horasN"
+                                    id="horasN" readonly="readonly" 
+                                    class="input_text" ></td>
+                            </tr>
+                            <tr>
+                                <td><label>Sueldo horas al doble: </label></td>
+                                <td><input type="text" name="horasD"
+                                    id="horasD" readonly="readonly" 
+                                    class="input_text" ></td>
+                            </tr>
+                            <tr>
+                                <td><label>Sueldo horas al triple: </label></td>
+                                <td><input type="text" name="horasT"
+                                    id="horasT" readonly="readonly" 
+                                    class="input_text" ></td>
+                            </tr>
+                            <tr>
+                                <td><label>Sueldo total: </label></td>
+                                <td><input type="text" name="sueldo"
+                                    id="sueldo" readonly="readonly" 
+                                    class="input_text" ></td>
+                            </tr>
+                            <!-- Botones metodos para js "Problema3()" y "borrard_p3()" -->
+                            <tr>
+                                <td></td>
+                                <td> <input type="button" value="Resultado"
+                                    onclick="Problema3()" name="mostrarResultados"
+                                    class="input_button"> </td>
+                            </tr>
+                            <tr>
+                                <td></td>
+                                <td><input type="button" value="Borrar Datos" 
+                                    name="borrar" onclick="borrard_p3()" 
+                                    class="input_button"></td>
+                            </tr>
+                        </tbody>
+                    </table>
+                </form>
+            </div>
+        </div>
+        <!-- Ejercicio 4 -->
+        <div class="contenedor-problema">
+            <h2>Ejercicio 4</h2>
+            <!-- Descripcion -->
+            <h4>Calcular la utilidad que un trabajador recibe en el reparto anual
+                de utilidades si este se le asigna como un porcetaje de su salario
+                mensual que depende de su antiguedad en la empresa de acuerdo con la sig tabla
+            </h4>
+            <table>
+                <thead>
+                    <tr>
+                        <th>Tiempo</th>
+                        <th>Utilidad</th>
+                    </tr>
+                </thead>
+                <tbody>
+                    <tr>
+                        <td>Menos de 1 año</td>
+                        <td>5% del salario</td>
+                    </tr>
+                    <tr>
+                        <td>1 año o mas y menos de 2 años</td>
+                        <td>7% del salario</td>
+                    </tr>
+                    <tr>
+                        <td>2 año o mas y menos de 5 años</td>
+                        <td>10% del salario</td>
+                    </tr>
+                    <tr>
+                        <td>5 año o mas y menos de 10 años</td>
+                        <td>15% del salario</td>
+                    </tr>
+                    <tr>
+                        <td>10 años o mas</td>
+                        <td>20% del salario</td>
+                    </tr>
+                </tbody>
+            </table>
+            <br>
+            <div class="contenedor-contenido">
+                <form method="post" name="formulario4" action="">
+                    <table class="tabla-problema">
+                        <tbody>
+                            <!-- Inputs -->
+                            <tr> 
+                                <td><label>Introduzca el numero de meses de antiguedad: </label></td>
+                                <td><input type="number" id="meses" 
+                                    nombre="meses" class="input_text"> </td>
+                            </tr>
+                            <tr>
+                                <td><label>Introduzca su salario: </label></td>
+                                <td><input type="number" id="salario" 
+                                    nombre="salario" class="input_text"> </td> 
+                            </tr>
+                            <!-- Input muestra las utildades -->
+                            <tr>
+                                <td><label>Utilidades: </label></td>
+                                <td><input type="text" name="utilidades"
+                                    id="utilidades" readonly="readonly" 
+                                    class="input_text" ></td>
+                            </tr>
+                            <!-- Botones metodos para js "Problema4()" y "borrard_p4()" -->
+                            <tr>
+                                <td></td>
+                                <td> <input type="button" value="Calcular"
+                                    onclick="Problema4()" name="mostrarResultados"
+                                    class="input_button"> </td>
+                            </tr>
+                            <tr>
+                                <td></td>
+                                <td><input type="button" value="Borrar Datos" 
+                                    name="borrar" onclick="borrard_p4()" 
+                                    class="input_button"></td>
+                            </tr>
+                        </tbody>
+                    </table>
+                </form>
+            </div>
+        </div>
+    </div>
+</body>
+</html>
